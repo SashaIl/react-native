@@ -53,14 +53,15 @@ const LoginForm = () => {
                         
                     </Image>
                 <TextInput style={styles.input} placeholder='Login' onChange={event => login.current = event.nativeEvent.text}/>
-                <TextInput style={styles.input} placeholder='Password' onChange={event => password.current = event.nativeEvent.text}/>hi
+                <TextInput style={styles.input} placeholder='Password' onChange={event => password.current = event.nativeEvent.text}/>
                 <Pressable style={styles.button} onPress={_ => setShowRes((prev) => !prev)}>
                     <Text>press me</Text>    
                 </Pressable>
 
+                
                 {showRes && login.current.length > 0 && password.current.length > 0 && 
                     <>
-                        <Text>Login: {login.current}</Text>
+                        <Text>a: {login.current}</Text>
                         <Text>Password: {password.current}</Text>
                     </>
                 }
