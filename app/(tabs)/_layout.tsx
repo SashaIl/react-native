@@ -14,24 +14,6 @@ const Layout = () => {
                     }
                 }
             />
-            <Tabs.Screen name="profile" 
-                options={
-                    {
-                        tabBarLabel: "Profile",
-                        tabBarIcon: ({size, color}) =>
-                            <FontAwesome5 name="user" size={size} color={color}/>
-                    }
-                }
-            />
-            <Tabs.Screen name="settings"
-                options={
-                    {
-                        tabBarLabel: "Settings",
-                        tabBarIcon: ({size, color}) =>
-                            <FontAwesome5 name="cog" size={size} color={color}/>
-                    }
-                }
-            />
         </Tabs>
     );
 }
