@@ -14,6 +14,14 @@ const Layout = () => {
                     }
                 }
             />
+            <Tabs.Screen name='post'
+                options={
+                    {
+                        tabBarLabel: "Post",
+                        tabBarIcon: ({size, color}) =>
+                            <FontAwesome5 name="file-alt" size={size} color={color}/>
+                    }
+                }/>
         </Tabs>
     );
 }
